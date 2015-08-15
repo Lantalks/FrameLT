@@ -1,0 +1,29 @@
+/// Estructura principal utilizada para LANstrap.
+
+Header (cabecera)
+
+Menú (navegacion)
+
+Botones (boton)
+
+Links (hipervinculo)
+
+Tags (etiqueta)
+
+Blockquote/Citas (cita)
+
+Informaciones y Popouts (alerta)
+
+Notificaciones (notificacion)
+
+Backgrounds (fondo)
+
+Listas (lista)
+
+Seleccion múltiple (multiseleccion)
+
+Paneles (panel)
+
+Footer (pie)
+
+Fuentes (fonts)

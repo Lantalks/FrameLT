@@ -1,0 +1,93 @@
+/* ====================== */
+/* Lanstrap 0.1 alpha     */
+/* ====================== */
+
+
+/* ESTILO GENERAL */
+
+* {
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+
+/* BOTONES */
+
+.btn .extragrande {
+
+}
+
+.btn .grande {
+
+}
+
+.btn .medio {
+
+}
+
+.btn .chico {
+
+}
+
+/* NOTIFICACIONES EMERGENTES */
+#notificacion .info {
+
+}
+
+#notificacion .alerta {
+
+}
+
+#notificacion .peligro {
+
+
+}
+
+#notificacion .iconos {
+	font-family: Arial;
+}
+
+
+/* BARRA DE NAVEGACION */
+#barra_nav {
+	background-image: linear-gradient(to bottom, #BFBFBF 0%, #878787 70%);
+}
+
+#barra_nav .titulo {
+
+}
+
+#barra_nav .divisor {
+
+}
+
+#barra_nav .links {
+	margin-left: 23;
+}
+
+#barra_nav .links li {
+	display: inline-block;
+	text-decoration: none;
+}
+
+
+
+
+
+/* TITULO DE UN POST O SECCION */
+#titular h1 {
+
+}
+
+#titular #contenedor {
+	border: 1px;
+}
+
+
+/* FONDOS */
+.fondo {
+	background: url('../img/background_login.jpg');
+	background-size: cover;
+	background-position: center;
+}
