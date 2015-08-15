@@ -1,54 +1,60 @@
 <!DOCTYPE html>
+<!-- Hice algunos comentarios en algunos elementos, hay cosas que borré y reemplazé para ahorrar divs -->
+<!-- Desde el vamos, te comiste el html tag -->
+<html id="login">
+	<head>
+		<title>Lantalks AdminCP</title>
+		<!-- Acá le coloqué más detalles al meta tag, y le habilito la modalidad responsive -->
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="theme-color" content="rgb(200, 200, 200)" />
+		<!-- El archivo pasa a llamarse LTframework -->
+		<link rel="stylesheet" type="text/css" href="../css/LTframework.css">
+	</head>
 
-<header>
-	<title>Lantalks Administration</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/lanstrap.css">
-</header>
-
-<body>
-	<div class="fondo"></div>
-	<div id="barra_nav">
-		<div id="divisor"></div>
-		<ul class="links">
-			<li class="titulo">Lantalks.</li>
-			<li>Link 1</li>
-			<li>Link 2</li>
-			<li>Link 3</li>
-			<li>Link 4</li>
-		</ul>
-	</div>
-
-<div id="notificacion" class="info">
-	<div class="iconos">i</div>
-	<div class="mensaje">
-		<p>Estás en la versión alpha de Lantalks Administration.</p>
-	</div>
-
-
-</div>
-
-
-	<div id="titular">
-		<h1>Primer sitio interno</h1>
-	</div>
-
-	<div id="contenedor">
-		<div id="login"> 
-			<img src="">
-			<p>Nombre de usuario</p>
-			<input type="email" name="correo"></input>
-			<p>Contraseña</p>
-			<input type="password" name="contraseña"></input>
-			<div class="btn medio"><span>Acceder</span></div>
-
+	<body>
+		<!-- Kenniteru, después te pido que me expliques porqué el fondo lo levantás por medio de un div.
+		<div class="fondo"></div>
+		-->
+		<header>
+			<nav id="principal">
+				<div class="encuadre">
+					<!-- Para qué un divisor?
+					<div id="divisor"></div>-->
+					<div id="brand">Lantalks</div>
+					<ul class="links">
+						<div style="width: 335px;">
+							<li>Link 1</li>
+							<li>Link 2</li>
+							<li>Link 3</li>
+							<li>Link 4</li>
+							<li>Link 5</li>
+						</div>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="encuadre">
+			<div id="notificacion" class="info">
+				<i class="iconos">i</i>
+				<p>Lantalks AdminCP se encuentra en fase alpha de desarrollo.</p>
+				<p>Pueden presentarse algunos errores en la navegación.</p>
+			</div>
+			<section>
+				<h1>Primer sitio interno</h1>
+				<form id="login"> 
+					<!-- Che, qué hace esta imagen acá?
+					<img src="">
+					Acá le volé los textos que estaban acá, los mandé como placeholder en los input. -->
+					<input type="email" name="correo" placeholder="Usuario o E-mail"></input>
+					<br />
+					<input type="password" name="contraseña" placeholder="Contraseña"></input>
+					<br />
+					<input type="button" action="" value="Acceder"></input>
+					<!-- Te va si lo reemplazo por un input button? 
+					<div class="btn medio"><span>Acceder</span></div>-->
+				</form>
+			</section>
 		</div>
-
-
-	</div>
-
-
-
-
-
-</body>
+	</body>
+</html>
