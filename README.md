@@ -12,3 +12,7 @@ Framework creado desde cero para su uso en nuestros sitios web.
 - El gradiente tiene menos "biselado", quedando un poco más plano y alineándolo a la nueva tendencia "flat". 
 ## Alpha 0.1 
 - Primera versión de LTframework (anteriormente Lanstrap). 
+## Alpha 0.3
+-Arreglos mínimos en el HTML y CSS.
+-Agregado de Material Design Icons.
+-Maquetación de un Panel de administración inicial.

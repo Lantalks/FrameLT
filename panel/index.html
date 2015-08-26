@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html id="login">
+<html id="paneladmin">
 	<head>
-		<title>Lantalks AdminCP: iniciar sesión</title>
+		<title>Lantalks AdminCP: Panel Principal</title>
 		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="theme-color" content="rgb(200, 200, 200)" />
@@ -24,7 +24,13 @@
 					</ul>
 				</div>
 			</nav>
+			
+			<nav id="top-general">
+				<div id="control-general">Control General</div>
+			</nav>
+
 		</header>
+		
 		<div class="encuadre">
 			<div id="notificacion" class="info">
 				<i class="material-icons">info</i>
@@ -32,17 +38,38 @@
 				<p>Pueden presentarse algunos errores en la navegación.</p>
 			</div>
 			<section>
-				<h1>Primer sitio interno</h1>
-				<form id="login"> 
-					<!-- Acá le volé los textos que estaban acá, los mandé como placeholder en los input. -->
-					<input type="email" name="correo" placeholder="Usuario o E-mail"></input>
-					<br />
-					<input type="password" name="contraseña" placeholder="Contraseña"></input>
-					<br />
-					<input type="button" action="" value="Acceder"></input>
-					<!-- Te va si lo reemplazo por un input button? 
-					<div class="btn medio"><span>Acceder</span></div>-->
-				</form>
+				<h1>Panel de control - Inicio</h1>
+				<div id="panel">
+					<div class="cabecera">¡Bienvenido de nuevo, Kenniteru!</div
+						>
+					<div class="links">
+						<ul>
+							<li>Cuenta y personalización</li>
+							<li>Credenciales</li>
+							<li>Ajustes avanzados</li>
+							<li>Salir</li>
+						</ul>
+					</div>
+				</div>
+
+			<section>
+				<h2>Plataformas</h2>
+				<div id="sitios">
+					<ul class="lista">
+						<li>Lantalks</li>
+						<li>Plux Radio</li>
+						<li>Loop Radio</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<h2>Accesos directos</h2>
+				<div>Panel de Wordpress</div>
+				<div>Estadísticas</div>
+				<div>Panel de Centovacast</div>
+				<div>Leer noticias</div>
+				<div>Entrar a la redacción</div>
 			</section>
 		</div>
 	</body>

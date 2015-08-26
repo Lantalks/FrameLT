@@ -3,6 +3,12 @@
 /* ===================== */
 
 /* Changelog:
+	0.3 alpha (Kenniteru):
+	- Organización de componentes en el CSS.
+	- Cambios menores en algunos nombres de componentes.
+	- Incrustación de íconos Material (Google) a través de fuentes.
+	- Agregado de CSS aplicable a un panel principal y botones relacionados.
+
 	0.2 alpha (Fermoto5HD): 
 	- Agregado elementos para responsive (e.g.: ".encuadre"). 
 	- Agregado estilos para los formularios. 
@@ -13,19 +19,64 @@
 	- Primera versión de LTframework (anteriormente Lanstrap). 
  */
 
+/* FUENTES INCRUSTADAS & ICONOS */
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fuentes/MaterialIcons-Regular.eot);	/*Para IE6-8*/
+	src: local('Material Icons'),
+		local('MaterialIcons-Regular'),
+		url(../fuentes/MaterialIcons-Regular.woff2) format('woff2'),
+		url(../fuentes/MaterialIcons-Regular.woff) format('woff'),
+		url(../fuentes/MaterualIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px; /* Tamaño preferido */
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+
+
+	/* Soporte para todos los navegadores en WebKit */
+	-webkit-font-smoothing: antialiased;
+	/* Soporte para Saferi y Chorme */
+	text-rendering: optimizeLegibility;
+	/* Soporte para Firefox */
+	-moz-osx-font-smoothing: grayscale;
+	/* Soporte para IE */
+	font-feature-settings: 'liga';
+}
+
 
 /* ESTILO GENERAL */
-
 * {
 	font-family: sans-serif;
 	padding: 0;
 	margin: 0;
 }
 
-/* ENCUADRE */
+/* ENCUADRE GENERAL DEL SITIO */
 .encuadre{
 	max-width: 960px;
 	margin: 0 auto;
+}
+
+/* RESPONSIVE */
+	/* barra navegacion */
+@media all and (max-width: 600px) {
+	nav#principal .links {
+		overflow-x: scroll;
+		width: calc(100% - 100px);
+		max-height: 40px;
+	}
 }
 
 /* BOTONES */
@@ -46,24 +97,27 @@
 
 }
 
-/* NOTIFICACIONES EMERGENTES */
+/* NOTIFICACIONES: estilos generales */
 #notificacion{
 	padding: 10px;
 	border-radius: 5px;
 	margin: 5px;
 }
-#notificacion.info {background-color: rgb(0, 150, 200);}
-#notificacion.alerta {}
-#notificacion.peligro {}
 
-#notificacion i.iconos {
-	font-family: Arial;
+#notificacion i {
 	display: inline-block;
+	vertical-align: middle;
 }
+
 #notificacion p{
 	display: inline-block;
 }
 
+/* NOTIFICACIONES: identificacion por color */
+#notificacion.info {background-color: rgb(0, 150, 200);}
+#notificacion.alerta {}
+#notificacion.peligro {}
+#notificacion.aviso {}
 
 /* BARRA DE NAVEGACION */
 nav#principal {
@@ -83,21 +137,10 @@ nav#principal #brand:hover {
 	cursor: default;
 }
 
-nav#principal .divisor {
-
-}
-
 nav#principal .links {
 	display: inline-block;
 	margin-left: 23;
 	vertical-align: middle;
-}
-@media all and (max-width: 600px) {
-	nav#principal .links {
-		overflow-x: scroll;
-		width: calc(100% - 100px);
-		max-height: 40px;
-	}
 }
 
 nav#principal .links li {
@@ -111,6 +154,15 @@ nav#principal .links li:hover{
 	color: #EEE;
 }
 
+nav#top-general {
+	background-image: linear-gradient(to bottom, #BFBFBF 0%, #AFAFAF 70%);
+	vertical-align: middle;
+}
+
+nav#top-general #control-general {
+	padding: 10px;
+	margin-left: 12%; 
+}
 
 /* FORMULARIOS */
 form{
@@ -145,12 +197,18 @@ article h1, section h1 {
 	font-size: 30px;
 }
 
+section h2, section h2 {
+	margin: 5px;
+	padding: 10px;
+	font-size: 30px;
+}
 #titular #contenedor {
 	border: 1px;
 }
 
 
 /* FONDOS */
+	/* inicio de sesion */
 html#login{
 	background: url('../img/background_login.jpg');
 	background-size: cover;
@@ -159,8 +217,30 @@ html#login{
 	background-position: fixed;
 	height: 100%;
 }
-.fondo {
-	background: url('../img/background_login.jpg');
-	background-size: cover;
-	background-position: center;
+
+html#admin
+
+/* PANEL DE INICIO DE SESION */
+form#login {
+	text-align: center;
 }
+
+/* PANEL DE ADMINISTRACION */
+
+#panel {
+	border: 1px solid black;
+	width: 25%;
+}
+
+#panel .cabecera {
+	border: 1px solid black;
+	padding-top: 35%;
+}
+
+#sitios {}
+
+#sitios .lista li {}
+
+#accesosdirectos {}
+
+#accesosdirectos div {}
